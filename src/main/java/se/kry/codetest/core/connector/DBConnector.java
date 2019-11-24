@@ -1,4 +1,4 @@
-package se.kry.codetest;
+package se.kry.codetest.core.connector;
 
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;
@@ -10,10 +10,10 @@ import io.vertx.ext.sql.SQLClient;
 
 public class DBConnector {
 
-  private final String DB_PATH = "poller.db";
   private final SQLClient client;
 
   public DBConnector(Vertx vertx){
+    String DB_PATH = "poller.db";
     JsonObject config = new JsonObject()
         .put("url", "jdbc:sqlite:" + DB_PATH)
         .put("driver_class", "org.sqlite.JDBC")

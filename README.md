@@ -9,21 +9,21 @@ There is also a wishlist of features in two separate tracks - if you have time l
 
 Critical issues (required to complete the assignment):
 
-- Whenever the server is restarted, any added services disappear
-- There's no way to delete individual services
-- We want to be able to name services and remember when they were added
-- The HTTP poller is not implemented
+- Whenever the server is restarted, any added services disappear **==> Done** 
+- There's no way to delete individual services **==> Done but you must specify the url in the input text**
+- We want to be able to name services and remember when they were added **==> Done stored on the DB**
+- The HTTP poller is not implemented **==> Done by using WebClient**
 
 Frontend/Web track:
-- We want full create/update/delete functionality for services
-- The results from the poller are not automatically shown to the user (you have to reload the page to see results)
-- We want to have informative and nice looking animations on add/remove services
+- We want full create/update/delete functionality for services  **==> Done only for create and delete**
+- The results from the poller are not automatically shown to the user (you have to reload the page to see results) **==> Done on code.js (refreshServiceList)**
+- We want to have informative and nice looking animations on add/remove services   **==> Done I added some colors, I hope that looks nice**
 
 Backend track
-- Simultaneous writes sometimes causes strange behavior
-- Protect the poller from misbehaving services (for example answering really slowly)
-- Service URL's are not validated in any way ("sdgf" is probably not a valid service)
-- A user (with a different cookie/local storage) should not see the services added by another user
+- Simultaneous writes sometimes causes strange behavior ==> Not Done
+- Protect the poller from misbehaving services (for example answering really slowly) **==> Done by using WorkerExecutor**
+- Service URL's are not validated in any way ("sdgf" is probably not a valid service) **==> Done by using URL type**
+- A user (with a different cookie/local storage) should not see the services added by another user **==> Not Done**
 
 Spend maximum four hours working on this assignment - make sure to finish the issues you start.
 

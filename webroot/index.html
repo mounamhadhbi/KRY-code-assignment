@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Welcome to KRY</title>
+    <link href="static/code.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-KRY status poller
-<ul id="service-list">
-</ul>
-<input type="text" id="url-name">
-<button id="post-service">Save</button>
 
+<table>
+    <tr>
+        <td style="display:inline">
+            <table>
+                <tr>
+                    <td>
+                        <div class="isa_info" id="divInfo" style="display: none;">
+                            <span id="info"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <label for="service-name">Name :</label>
+                            <input id="service-name" type="text">
+                        </div>
+                        <div>
+                            <label for="url-name">Service URL:</label>
+                            <input id="url-name" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="display: inline-flex;">
+                        <div class="bouton-aligne">
+                            <button id="post-service">Save</button>
+                        </div>
+
+                        <div class="bouton-aligne">
+                            <button id="delete-service">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td style="display: inline">
+            <div>
+                KRY status poller :
+                <ul id="service-list"></ul>
+            </div>
+        </td>
+
+    </tr>
+</table>
 </body>
+
 <script src="static/code.js">
 </script>
 </html>
+
+
